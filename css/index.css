@@ -10,3 +10,38 @@ html,
 body {
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+
+/* header */
+
+.header__content i,
+.header__content span {
+    font-size: 14px;
+}
+
+.header__content span {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.header__navbar .nav-item .nav-link {
+    color: white;
+    padding: 0 20px;
+}
+
+.header__navbar .navbar-nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.header__navbar .nav-item::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    transition: all 0.5s
+}
+
+.header__navbar .nav-item:hover::after,
+.header__navbar .navbar-nav .nav-item.active::after {
+    width: 100%
+}
