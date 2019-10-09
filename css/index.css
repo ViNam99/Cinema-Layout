@@ -215,3 +215,68 @@ body {
 .movie__star {
     color: #fbbd61
 }
+
+
+/* showstime */
+
+.showsTime {
+    padding-top: 80px;
+}
+
+.showsTime .nav-tabs .nav-link {
+    position: relative;
+    color: #4a4a4a;
+    padding: 10px 30px;
+}
+
+.showsTime .nav-tabs .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right, #fbbd61, #ec7532);
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    transition: all 0.5s
+}
+
+.showsTime .nav-tabs .nav-link:hover::after {
+    width: 100%
+}
+
+.showsTime .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active::after {
+    width: 100%
+}
+
+.showsTime .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active,
+.showsTime .nav-tabs .nav-link:hover {
+    border: white;
+}
+
+.tab-pane>.row {
+    padding: 50px 0;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .004);
+    color: #717171;
+}
+
+.showsTime__circle {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    background-color: #717171;
+    display: inline-block;
+    margin-left: 10px
+}
+
+.time {
+    padding: 10px 15px;
+    background-color: #D8D8D8;
+    border-radius: 5px;
+    border: 1px solid #D8D8D8
+}
