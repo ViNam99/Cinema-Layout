@@ -401,3 +401,25 @@ body {
     background: none;
     transition: all 0.5s
 }
+
+
+/* contact */
+
+.contact {
+    padding: 80px 0;
+}
+
+.contact p {
+    font-size: 23px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+
+.contact h2 {
+    font-size: 46px;
+    font-weight: 400;
+    color: #ec7532
+}
