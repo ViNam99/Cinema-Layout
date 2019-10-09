@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Movie Start - Cinema</title>
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Fonts google -->
@@ -976,8 +979,126 @@
             </div>
         </div>
     </section>
+    <section class="comingSoon ">
+        <div class="bg__black">
+
+        </div>
+        <div class="container">
+            <div class="row comingSoon__top">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="commingSoon__title">COMING SOON</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <span class="commingSoon__intro">DRAMA, THRILLER</span>
+                    <h2>Deepwater Horizon</h2>
+                    <div class="row">
+                        <div class="col-md-3 col-6 comingSoon__star ">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="col-md-9 col-6">
+                            <i class="fa fa-calendar-alt pr-2"></i>
+                            <span>30 September, 2017</span>
+                        </div>
+                    </div>
+                    <p>A dramatization of the April 2010 disaster, when the offshore drilling rig Deepwater Horizon exploded and created the worst oil spill in U.S. history.</p>
+                    <a href="#" class="info">MORE INFO <i class="fa fa-arrow-right"></i></a>
+                </div>
+                <div class="col-md-6 col-12 comingSoon__video">
+                    <img src="./img/slide-3-video.png" class="w-100 img-reponsive comingSoon__img--video" alt="">
+                    <a class="play" href="#">
+                        <i class="fa fa-play"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row text-center owl-carousel owl-theme comingSoon__bottom">
+                <div class="item">
+                    <img src="./img/movie-2.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <p>21 November , 2018</p>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-3.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-4.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-5.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-6.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-7.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-1.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-2.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+                <div class="item">
+                    <img src="./img/movie-3.jpg" class="w-100">
+                    <p>The connedian</p>
+                    <span>21 November , 2018</span>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script>
+    <!-- Owl carousel -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            margin: 10,
+            autoplayTimeout: 2000,
+            autoplayHoverPause: true,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 3,
+                    loop: true
+                },
+                600: {
+                    items: 6,
+                    loop: true
+                },
+                1000: {
+                    items: 6,
+                    loop: true
+                }
+            }
+        })
+    </script>
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
